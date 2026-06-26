@@ -1,0 +1,46 @@
+{
+  "gameConfig": {
+    "rows": 3,
+    "columns": 5,
+    "bet": 10,
+    "balance": 1000
+  },
+  "symbols": [
+    { "id": "cherry", "type": "low" },
+    { "id": "lemon", "type": "low" },
+    { "id": "orange", "type": "low" },
+    { "id": "plum", "type": "mid" },
+    { "id": "bell", "type": "mid" },
+    { "id": "bar", "type": "high" },
+    { "id": "seven", "type": "high" }
+  ],
+  "spins": [
+    {
+      "id": 1,
+      "matrix": [
+        ["cherry", "lemon", "orange", "plum", "bell"],
+        ["bar", "seven", "cherry", "lemon", "orange"],
+        ["plum", "bell", "bar", "seven", "cherry"]
+      ],
+      "win": { "amount": 0, "lines": [] }
+    },
+    {
+      "id": 2,
+      "matrix": [
+        ["seven", "seven", "seven", "lemon", "orange"],
+        ["cherry", "cherry", "cherry", "plum", "bell"],
+        ["bar", "lemon", "orange", "plum", "bell"]
+      ],
+      "win": { "amount": 50, "lines": [1, 2] }
+    },
+    {
+      "id": 3,
+      "matrix": [
+        ["bell", "plum", "orange", "lemon", "cherry"],
+        ["seven", "bar", "plum", "orange", "lemon"],
+        ["cherry", "bell", "seven", "bar", "plum"]
+      ],
+      "win": { "amount": 0, "lines": [] }
+    }
+  ]
+}
