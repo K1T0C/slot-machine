@@ -175,8 +175,8 @@ export class SlotView {
     public animateWinningCoins(targetPos: { x: number, y: number }, onComplete: () => void) {
         // --- ТВОИ НАСТРОЙКИ ---
         const SETTINGS = {
-            baseScale: 0.6,       // Размер при вылете (регулируй от 0.1 до 1.0)
-            minScale: 0.15,       // Размер при прилете
+            baseScale: 0.6,       
+            minScale: 0.15,       
             coinCount: 20,        
             speed: 0.15           
         };
